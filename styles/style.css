@@ -1,0 +1,305 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	margin: 0 auto;
+}
+
+.container{
+	width: 1366px;
+	margin: 0 auto;
+}
+
+.header{
+	height: 190px;
+}
+
+.logo{
+	margin:33px 42px ;
+}
+.header__title{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 32px;
+	margin-top: -95px;
+	margin-left: 600px;
+}
+.menu{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	color: #fff;
+	background-color: rgba(26, 103, 61, 0.81);
+	font-weight: 300;
+	height: 80px;
+
+}
+.menu__list{
+
+	position: relative;
+	list-style-type:none;
+	margin: 0;
+
+  	padding: 0;
+  
+}
+.menu__list__link{
+
+	display: inline-block;
+	padding-top: 7px;
+	margin-top: 4px;
+	float: left;
+	border-right: 1px solid #fff;
+
+}
+.submenu{
+	list-style: none;
+}
+
+
+
+.menu__list__link:last-child{
+	border-right: none;
+
+}
+.menu__list__link a{
+	
+
+	font-size: 21px;
+	display: block;
+  	color: white;
+  	text-align: left;
+  	padding: 15px;
+  	text-decoration: none;
+}
+.menu__list__link a:hover{
+	text-shadow: 1px 1px 15px black;
+	transition: 300ms;
+
+}
+.menu__list__link a:after{
+	margin-top: 10px;
+	content: '';
+	width: 0px;
+	height: 2px;
+	display: block;
+	background: white;
+	transition: 300ms;
+}
+
+.menu__list__link a:hover::after{
+  width: 100%;
+  
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+			}
+nav ul li:hover > ul {
+
+	padding-top:20;
+	margin-top: 80px;
+	display:inherit;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	color: #fff;
+	background-color: rgba(26, 103, 61, 0.81);
+	font-weight: 300;
+			}
+nav ul ul li {
+	margin-left: -30px;
+	
+	float:none;
+	display:list-item;
+	position: relative;
+			}
+
+
+.balint__photo{
+	margin: 80px 80px;
+}
+.main__header{
+	margin-top: -300px;
+	margin-left: 400px;
+}
+.main__text{
+	margin-left: 400px;
+}
+.goals{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	margin-top: 100px;
+	background-color: rgba(228, 228, 228, 1);
+}
+.head{
+	padding-top: 50px;
+	text-align: center;
+}
+.goal__list{
+	margin: 0 auto;
+	width: 1000px;
+
+	padding-bottom: 50px;
+}
+.goal__list li{
+	margin-top: 20px;
+}
+
+.info__list{
+	margin: 0 auto;
+	width: 1000px;
+	padding-bottom: 50px;
+}
+.info__list li{
+	margin-top: 10px;
+	color: green;
+}
+.footer{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	background-color: rgba(26, 103, 61, 0.81);
+	height: 200px;
+
+}
+
+
+.info{
+	margin-bottom: 50px;
+}
+.info__list li a{
+	color: green;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.info__list li:hover{
+	text-decoration: underline;
+}
+.main__partners{
+	height: 500px;
+
+}
+.partners{
+ margin: 100px auto;
+}
+.partner__card{
+	padding-top: 20px;
+	margin-left: 50px;
+	justify-content: space-around;
+	display: inline-flex;
+
+}
+.partner__card a p{
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+}
+.partner__card a{
+	text-decoration: none;
+}
+.partner__card a:hover{
+	color: black;
+	text-decoration: underline;
+}
+.baimg{
+	margin-left: 35%;
+}
+.partner__card a img{
+	height: 84px;
+}
+.opplimg{
+	margin-left: 45%;
+}
+.mipimg{
+	margin-left: 10%;
+}
+.partner__card:hover{
+	border-radius: 20px;
+	background-color: rgba(228, 228, 228, 0.6);
+	transition: 400ms;
+}
+.gray{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	margin-top: 100px;
+	padding-bottom: 50px;
+	background-color: rgba(228, 228, 228, 1);
+}
+.leader__link{
+	color:rgba(26, 103, 61, 0.81);
+
+}
+.leader__link:hover{
+	text-shadow: 0.5px 0.5px 1px  black;
+	color:green;
+	transition: 300ms;
+	text-decoration: underline;
+}
+
+.rulers__list {
+	text-align: center;
+	list-style-type: none;
+}
+.anketa{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 10px;
+	padding:4px 30px 10px;
+	background-color: rgba(228, 228, 228, 1);
+	margin-left: 25%;
+	width: 40%;
+	margin-bottom: 40px;
+}
+.anketa__head{
+	text-align: center;
+}
+
+@media (max-width: 1315px){
+	body{
+		font-size: 20px;
+	}
+	h1{
+		font-size: 33px;
+	}
+	.logo{
+		margin: 23px 22px;
+	}
+	.container{
+		width: 1080px;
+	}
+	.header__title{
+		margin-left: 500px;
+		font-size: 25px;
+	}
+	.menu__list__link a{
+		font-size: 15px;
+		padding-top: 20px;
+		padding-bottom: 18px;
+	}
+	.balint__photo{
+		width: 170px;
+		margin: 50px 120px;
+	}
+	.main__header{
+		margin-top: -220px;
+		margin-left: 350px;
+	}
+	.main__text{
+		width: 60%;
+		margin-left: 350px;
+	}
+	.goal__list li{
+		width: 90%;
+	}
+	.partner__card{
+		margin-left: 25px;
+		font-size: 14px;
+		width: 300px;
+		padding: 5px;
+	}
+	.partner__card p{
+
+		text-align: center;
+	}
+	.mipimg{
+		margin-left: 15px;
+	}
+	.opplimg{
+		margin-left: 40%;
+	}
+	}
+}
