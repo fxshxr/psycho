@@ -154,7 +154,7 @@ nav ul ul li {
 .footer{
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	background-color: rgba(26, 103, 61, 0.81);
-	height: 200px;
+	height: 100px;
 
 }
 
@@ -247,6 +247,16 @@ nav ul ul li {
 .anketa__head{
 	text-align: center;
 }
+.copy{
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+}
+
+
+
+
+
 
 @media (max-width: 1315px){
 	body{
