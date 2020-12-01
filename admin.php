@@ -104,7 +104,7 @@ if(isset($_POST['submit']) and $_FILES){
 			}
 			else{
 				echo "<p class='error' id='login1'>Неверный пароль</p>";
-			} if ($_POST['pass'] == 'balint11' and $_POST['login'] == 'admin'){
+			} if ($_POST['pass'] == '333333333' and $_POST['login'] == '33333333333'){
 				echo '<script>document.getElementById("login1" ).style.display = "none"; </script>';
 			}
 			
@@ -114,7 +114,7 @@ if(isset($_POST['submit']) and $_FILES){
 			
 
 <?php 
-			if ($_POST['pass'] == 'balint11' and $_POST['login'] == 'admin' ) {
+			if ($_POST['pass'] == '3333333333333333' and $_POST['login'] == '333333333333' ) {
 				echo '
 
 				<p>
