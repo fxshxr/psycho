@@ -2,51 +2,36 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Балинтовское Движение в России</title>
+<meta id="vp" name="viewport" content="width=device-width, initial-scale=1">
+		
+		<script>
+			if (screen.width < 720)
+{
+    var mvp = document.getElementById('vp');
+    mvp.setAttribute('content','initial-scale=0.1');
+}
+		</script>
+	<title>Балинтовские группы </title>
 	<link rel="stylesheet" href="styles/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet"> 
+	
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 </head>
 <body>
-	<header class="header">
-		<div class="container">
-			<a href="index.html" class="logo"><img src="images/logo.png" class="logo" alt=""></a>
-			<p class="header__title">Балинтовское Движение В России</p>
-		</div>
-	</header>
-	<nav class="menu">
-		<div class="container">
-			<ul class="menu__list">
-				<li class="menu__list__link"><a href="groups.html">БАЛИНТОВСКИЕ ГРУППЫ</a>
-					<ul class="submenu">
-						<li><a href="">Цели и задачи</a></li>
-						<li><a href="">Особенности работы</a></li>
-						<li><a href="">Действующие группы</a></li>
-					</ul>
-				</li>
-				<li class="menu__list__link"><a href="leaders.html">ПОДГОТОВКА ЛИДЕРОВ</a> 
-					<ul class="submenu">
-						<li><a href="">Положение о лидере БГ</a></li>
-						<li><a href="">Программа подготовки лидеров БГ</a></li>
-						<li><a href="">Сертифицированные лидеры БГ</a></li>
-						<li><a href="">Cупервизии</a></li>
-					</ul>
-				</li>
-				<li class="menu__list__link"><a href="international.html">МЕЖДУНАРОДНЫЕ ПРОГРАММЫ</a>
-					<ul class="submenu">
-						<li><a href="">Обучение в международных семинарах</a></li>
-						<li><a href="">Международный круглый стол</a></li>
-						<li><a href="">Балинтовский симпозиум на Байкале</a></li>
-					</ul>
-				</li>
-				<li class="menu__list__link"><a href="schedule.html">КАЛЕНДАРЬ СОБЫТИЙ</a></li>
-				<li class="menu__list__link"><a href="library.html">БИБЛИОТЕКА</a></li>
-			</ul>
-		</div>
-	</nav>
+	<?php 
+		include 'vars.php';
+		addHeader();
+	?>
+	
 	<main class="main">
 		<div class="container">
-			<h1 class="head">Балинтовские группы </h1>
+			<h1 class="group__head">Балинтовские группы </h1>
 			<p>Балинтовские группы – это практика навыков понимания пациентов и общения с ними. Используя этот подход, специалист может обнаружить, проанализировать и выявить основу неясных ситуаций и психологические источники проблем, возникающих в межличностных отношениях</p>
 			<p>Балинтовские группы – это способ познакомиться с людьми, которые хотят научиться лучше помогать другим, и это безопасный способ делиться знаниями и опытом. Это один из лучших, методов обучения межличностному общению, особенно в терапевтическом взаимодействии</p>
 			<p>Балинтовская групповая работа ведется в особой атмосфере доверия и тепла</p>
@@ -93,15 +78,14 @@
 			<div class="container">
 				<h1 class="head">Структура и деятельность Лидера Балинтовской группы</h1>
 				<p>Балинтовские группы ведет человек, знакомый с характеристиками межличностных отношений и которому разрешено самостоятельно руководить группой. Лидер Балинтовских Групп несет ответственность за эту деятельность.</p>
-				<a href="leader1.html" class="leader__link"><h1 class="head">Ссылка на положение о Лидере БГ</h1></a>
+				<a href="leader1.php" class="leader__link"><h1 class="head">Ссылка на положение о Лидере БГ</h1></a>
 			</div>
 		</div>
 
 	</main>
-	<footer class="footer">
-		<div class="container">
-			
-		</div>
-	</footer>
+<?php 
+		
+		addFooter();
+	?>
 </body>
 </html>
